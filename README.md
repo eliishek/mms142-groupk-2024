@@ -62,7 +62,7 @@ A **branch** is a **copy of the project** where you can work on your part withou
 #### **Step 2: Create a New Branch**
 1. Click the **pencil icon** in the top-right corner of the file view to start editing the file.
 2. After editing, click the green **Commit changes** button.
-3. **IMPORTANT:** You should select **Create a new branch for this commit and start a pull request**.  
+3. ⚠️**IMPORTANT:** You should select `Create a new branch for this commit and start a pull request`.  
    - Clicking that instead of `main` avoids overwriting each other's work and keeps your changes separate until reviewed.
 
 4. Name the branch descriptively, such as:
