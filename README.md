@@ -34,6 +34,7 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 - The `main` branch is the **official version** of our project, where all approved and stable updates are saved.
 - It’s what our **live website** uses and reflects the final, working version of our project.
 - **We don’t make changes directly to `main`** to prevent breaking the site or introducing errors.
+- Instead of saving changes to `main` everyone who wants to edit should use `branches`
 
 <!-- Add an empty line above --- -->
 ---
@@ -48,7 +49,9 @@ A **branch** is a **copy of the project** where you can work on your part withou
 
 ### 3. What's the workflow we should follow?
 
-#### **Step 1: Navigate to the file you want to edit**
+#### **Step 1: Open the file you want to edit**
+For anyone of you who wants to explore github, directly add or make changes in our HTML or CSS file, then you should do the following: 
+
 1. Open the repository:  
    👉 [MMS-142 Group K Repository](https://github.com/MMS-142-Group-K-2024/mms142-groupk-2024)
 2. Choose the file you want to edit:
