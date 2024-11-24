@@ -30,32 +30,61 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 
 ## How to Contribute
 
-1. Clone the repository:
+### 1. What is the `main` branch?
+- The `main` branch is the **official version** of our project, where all approved and stable updates are saved.
+- It’s what our **live website** uses and reflects the final, working version of our project.
+- **We don’t make changes directly to `main`** to prevent breaking the site or introducing errors.
+
+---
+
+### 2. Why do we use branches?
+A **branch** is a **copy of the project** where you can work on your part without affecting the `main` branch. It allows:
+- **Safe editing** of files without breaking the project.
+- **Proper review** before merging changes into the final version (`main`).
+
+---
+
+### 3. What’s the workflow?
+
+#### **Step 1: Navigate to the file you want to edit**
+1. Open the repository:  
+   👉 [MMS-142 Group K Repository](https://github.com/MMS-142-Group-K-2024/mms142-groupk-2024)
+2. Choose the file you want to edit:
+   - **To add research content**: Click on `index.html`.
+   - **To edit website styling**: Click on `css/styles.css`.
+
+---
+
+#### **Step 2: Create a New Branch**
+1. Click the **pencil icon** in the top-right corner of the file view to start editing the file.
+2. Scroll to the bottom of the page to the **Commit changes** section.
+3. Select **Create a new branch for this commit and start a pull request**.  
+   - This avoids overwriting each other's work and keeps your changes separate until reviewed.
+
+4. Name the branch descriptively, such as:
    ```bash
-   git clone https://github.com/username/mms142-groupk-2024.git
-   ```
-   
-2. Create a new branch for your changes:
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-   
-3. Make your changes and commit them:
-   ```bash
-   git add .
-   git commit -m "Description of your changes"
+   feature/add-introduction
    ```
 
-4. Push your branch to GitHub:
-   ```bash
-    git push origin feature/your-feature
-   ```
-5. Submit a pull request for review:
-   ```markdown
-       - Go to the repository on GitHub.
-       - Click the **Pull Requests** tab.
-       - Click **New Pull Request** and follow the instructions to submit your changes
-   ```
+#### **Step 3: Submit the Pull Request**
+1. After clicking Propose changes, GitHub will direct you to create a pull request.
+2. Add a title and description of what you’ve changed:
+   - Example title: "Added Introduction Content"
+   - Example description:
+        - Added content to the introduction section.
+        - Updated references for AgriTech platforms.
+     
+3. Click Create **Pull Request**.
+
+#### **Why Use This Workflow?**
+1. Protect the Main Branch:
+   - Avoid accidental errors or incomplete work breaking the project.
+2. Organized Collaboration:
+   - Everyone works on their part independently without interference.
+3. Encourages Feedback:
+   - Pull requests allow for reviews and improvements.
+4. Real-World Practice:
+   - This is how professional teams manage projects.
 
 
 ## License
