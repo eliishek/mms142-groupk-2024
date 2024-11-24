@@ -75,8 +75,10 @@ A **branch** is a **copy of the project** where you can work on your part withou
         - Updated references for AgriTech platforms.
      
 3. Click Create **Pull Request**.
+   
+---
 
-#### **Why Use This Workflow?**
+### **4. Why Use This Workflow?**
 1. Protect the Main Branch:
    - Avoid accidental errors or incomplete work breaking the project.
 2. Organized Collaboration:
