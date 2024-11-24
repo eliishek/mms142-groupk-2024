@@ -30,7 +30,7 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 
 ## How to Contribute
 
-### 1. What is the `main` branch?
+### 1. First, you should know what is the `main` branch
 - The `main` branch is the **official version** of our project, where all approved and stable updates are saved.
 - It’s what our **live website** uses and reflects the final, working version of our project.
 - **We don’t make changes directly to `main`** to prevent breaking the site or introducing errors.
@@ -38,7 +38,7 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 <!-- Add an empty line above --- -->
 ---
 
-### 2. Why do we use branches?
+### 2. Why everyone should use branches?
 A **branch** is a **copy of the project** where you can work on your part without affecting the `main` branch. It allows:
 - **Safe editing** of files without breaking the project.
 - **Proper review** before merging changes into the final version (`main`).
@@ -46,23 +46,24 @@ A **branch** is a **copy of the project** where you can work on your part withou
 <!-- Add an empty line above --- -->
 ---
 
-### 3. What’s the workflow?
+### 3. So what's the workflow should we all follow?
 
 #### **Step 1: Navigate to the file you want to edit**
 1. Open the repository:  
    👉 [MMS-142 Group K Repository](https://github.com/MMS-142-Group-K-2024/mms142-groupk-2024)
 2. Choose the file you want to edit:
    - **To add research content**: Click on `index.html`.
-   - **To edit website styling**: Click on `css/styles.css`.
+   - **To edit website styling**: Open the `css` folder and click on `styles.css.` This file controls how the website looks, including colors, fonts, spacing, and layout.
+   - **To upload images**: Add your image files to the `images` folder by clicking **Add file > Upload files** at the top-right of the repository page. 
 
 <!-- Add an empty line above --- -->
 ---
 
 #### **Step 2: Create a New Branch**
 1. Click the **pencil icon** in the top-right corner of the file view to start editing the file.
-2. Scroll to the bottom of the page to the **Commit changes** section.
-3. Select **Create a new branch for this commit and start a pull request**.  
-   - This avoids overwriting each other's work and keeps your changes separate until reviewed.
+2. After editing, click the green **Commit changes** button.
+3. **IMPORTANT:** You should select **Create a new branch for this commit and start a pull request**.  
+   - Clicking that instead of `main` avoids overwriting each other's work and keeps your changes separate until reviewed.
 
 4. Name the branch descriptively, such as:
    ```bash
