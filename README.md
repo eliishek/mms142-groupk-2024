@@ -35,14 +35,10 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 - It’s what our **live website** uses and reflects the final, working version of our project.
 - **We don’t make changes directly to `main`** to prevent breaking the site or introducing errors.
 
----
-
 ### 2. Why do we use branches?
 A **branch** is a **copy of the project** where you can work on your part without affecting the `main` branch. It allows:
 - **Safe editing** of files without breaking the project.
 - **Proper review** before merging changes into the final version (`main`).
-
----
 
 ### 3. What’s the workflow?
 
@@ -52,8 +48,6 @@ A **branch** is a **copy of the project** where you can work on your part withou
 2. Choose the file you want to edit:
    - **To add research content**: Click on `index.html`.
    - **To edit website styling**: Click on `css/styles.css`.
-
----
 
 #### **Step 2: Create a New Branch**
 1. Click the **pencil icon** in the top-right corner of the file view to start editing the file.
@@ -76,7 +70,6 @@ A **branch** is a **copy of the project** where you can work on your part withou
      
 3. Click Create **Pull Request**.
    
----
 
 ### **4. Why Use This Workflow?**
 1. Protect the Main Branch:
