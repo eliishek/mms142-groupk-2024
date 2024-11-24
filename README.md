@@ -87,6 +87,7 @@ For anyone of you who wants to explore github, directly add or make changes in o
      ```
      
 3. Click Create **Pull Request**.
+4. Anarica, or anyone available for coding should check the changes and approve this. 
 
 <!-- Add an empty line above --- -->
 ---
