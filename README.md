@@ -87,13 +87,13 @@ A **branch** is a **copy of the project** where you can work on your part withou
 ---
    
 ### **4. Why Use This Workflow?**
-1. Protect the Main Branch:
+- **Protect the Main Branch:**
    - Avoid accidental errors or incomplete work breaking the project.
-2. Organized Collaboration:
+- **Organized Collaboration:**
    - Everyone works on their part independently without interference.
-3. Encourages Feedback:
+- **Encourages Feedback:**
    - Pull requests allow for reviews and improvements.
-4. Real-World Practice:
+- **Real-World Practice:**
    - This is how professional teams manage projects.
 
 ## License
