@@ -59,7 +59,8 @@ For anyone of you who wants to explore github, directly add or make changes in o
 2. Choose the file you want to edit:
    - **To add research content**: Click on `index.html`.
    - **To edit website styling**: Open the `css` folder and click on `styles.css.` This file controls how the website looks, including colors, fonts, spacing, and layout.
-   - **To upload images**: Add your image files to the `images` folder by clicking **Add file > Upload files** at the top-right of the repository page. 
+   - **To upload images**: Add your image files to the `images` folder by clicking **Add file > Upload files** at the top-right of the repository page.
+   - **To upload supporting documents**: Save to `docs/`
 
 <!-- Add an empty line above --- -->
 ---
