@@ -35,10 +35,16 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 - It’s what our **live website** uses and reflects the final, working version of our project.
 - **We don’t make changes directly to `main`** to prevent breaking the site or introducing errors.
 
+<!-- Add an empty line above --- -->
+---
+
 ### 2. Why do we use branches?
 A **branch** is a **copy of the project** where you can work on your part without affecting the `main` branch. It allows:
 - **Safe editing** of files without breaking the project.
 - **Proper review** before merging changes into the final version (`main`).
+
+<!-- Add an empty line above --- -->
+---
 
 ### 3. What’s the workflow?
 
@@ -48,6 +54,9 @@ A **branch** is a **copy of the project** where you can work on your part withou
 2. Choose the file you want to edit:
    - **To add research content**: Click on `index.html`.
    - **To edit website styling**: Click on `css/styles.css`.
+
+<!-- Add an empty line above --- -->
+---
 
 #### **Step 2: Create a New Branch**
 1. Click the **pencil icon** in the top-right corner of the file view to start editing the file.
@@ -60,6 +69,9 @@ A **branch** is a **copy of the project** where you can work on your part withou
    feature/add-introduction
    ```
 
+<!-- Add an empty line above --- -->
+---
+
 #### **Step 3: Submit the Pull Request**
 1. After clicking Propose changes, GitHub will direct you to create a pull request.
 2. Add a title and description of what you’ve changed:
@@ -69,8 +81,10 @@ A **branch** is a **copy of the project** where you can work on your part withou
         - Updated references for AgriTech platforms.
      
 3. Click Create **Pull Request**.
-   
 
+<!-- Add an empty line above --- -->
+---
+   
 ### **4. Why Use This Workflow?**
 1. Protect the Main Branch:
    - Avoid accidental errors or incomplete work breaking the project.
@@ -80,7 +94,6 @@ A **branch** is a **copy of the project** where you can work on your part withou
    - Pull requests allow for reviews and improvements.
 4. Real-World Practice:
    - This is how professional teams manage projects.
-
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
