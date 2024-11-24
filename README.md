@@ -46,7 +46,7 @@ A **branch** is a **copy of the project** where you can work on your part withou
 <!-- Add an empty line above --- -->
 ---
 
-### 3. So what's the workflow should we all follow?
+### 3. What's the workflow we should follow?
 
 #### **Step 1: Navigate to the file you want to edit**
 1. Open the repository:  
@@ -78,8 +78,10 @@ A **branch** is a **copy of the project** where you can work on your part withou
 2. Add a title and description of what you’ve changed:
    - Example title: "Added Introduction Content"
    - Example description:
+     ```markdown
         - Added content to the introduction section.
         - Updated references for AgriTech platforms.
+     ```
      
 3. Click Create **Pull Request**.
 
