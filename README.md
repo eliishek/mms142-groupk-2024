@@ -50,12 +50,10 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
    ```bash
     git push origin feature/your-feature
    ```
-```markdown
 5. Submit a pull request for review:
        - Go to the repository on GitHub.
        - Click the **Pull Requests** tab.
        - Click **New Pull Request** and follow the instructions to submit your changes
-```
 
 
 ## License
