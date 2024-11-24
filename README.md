@@ -30,11 +30,13 @@ Agriculture is central to the Filipino economy and culture, yet traditional dist
 
 ## How to Contribute
 
+For anyone of you who wants to explore github, directly add or make changes in our HTML or CSS file, then you should understand the following:
+
 ### 1. First, you should know what is the `main` branch
 - The `main` branch is the **official version** of our project, where all approved and stable updates are saved.
 - It’s what our **live website** uses and reflects the final, working version of our project.
-- **We don’t make changes directly to `main`** to prevent breaking the site or introducing errors.
-- Instead of saving changes to `main` everyone who wants to edit should use `branches`
+- **After editing, we don’t make/save changes directly to `main`** to prevent breaking the site or introducing errors.
+- Instead of saving changes to `main` should use `branches`
 
 <!-- Add an empty line above --- -->
 ---
