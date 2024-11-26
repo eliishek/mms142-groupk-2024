@@ -11,7 +11,7 @@
 body {
     font-family: 'Caviar Dreams', Arial, sans-serif; /* Body text uses Caviar Dreams */
     background-color: #f5f5dc; /* Beige background */
-    color: #2f4f4f; /* Dark olive text */
+    color: #636b2f; /* Dark olive text */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -19,7 +19,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #556b2f; /* Olive green background */
+    background-color: #636b2f; /* Olive green background */
     color: white;
     text-align: center;
     padding: 1.5rem;
