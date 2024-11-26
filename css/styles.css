@@ -30,7 +30,7 @@ header {
 section h2 {
     font-family: 'True Sage', serif; /* Use True Sage for section titles */
     color: #556b2f;
-    border-bottom: 2px solid #c1b9af;
+    border-bottom: 2px solid rgba(193, 185, 175, 0.8); 
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
