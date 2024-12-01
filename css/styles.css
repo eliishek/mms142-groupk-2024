@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'True Sage';
-    src: url('fonts/TrueSage-Regular.ttf') format('truetype');
+    src: url('css/fonts/TrueSage-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('fonts/CaviarDreams-Regular.ttf') format('truetype');
+    src: url('css/fonts/CaviarDreams-Regular.ttf') format('truetype');
 }
 /* General body styling */
 body {
