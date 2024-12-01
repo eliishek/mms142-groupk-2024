@@ -9,12 +9,12 @@
 }
 
 @font-face {
-    font-family: 'Gilgan';
-    src: url('fonts/Gilgan-Regular.otf') format('truetype');
+    font-family: 'Lorin';
+    src: url('fonts/Lorin-Regular.otf') format('truetype');
 }
 
 body {
-    font-family: 'Gilgan', Arial, sans-serif; /* Body text uses Caviar Dreams */
+    font-family: 'Lorin', Arial, sans-serif; /* Body text uses Caviar Dreams */
     background-color: #f5f5dc; /* Beige background */
     color: #636b2f; /* Dark olive text */
     margin: 0;
