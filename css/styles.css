@@ -17,19 +17,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header styling */
-header {
-    background-color: #636b2f; /* Olive green background */
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-family: 'True Sage', serif; /* Use True Sage for the header */
-    border-radius: 15px; /* Rounded edges for header */
-    margin: 1rem auto;
-    width: 90%; /* Center the header with some spacing */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
 h1 {
     font-family: 'True Sage', serif; /* True Sage for the heading */
     color: #556b2f; /* Olive green */
