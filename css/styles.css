@@ -110,19 +110,16 @@ section {
 
 .hero-image {
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh; /* Full viewport height */
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
     overflow: hidden; 
 }
 
 .hero-image img {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    max-width: 95vh; 
-    max-height: 95vh;
-    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; 
 }
 
 /* Regular Cards (e.g., PIDS Findings) */
