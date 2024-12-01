@@ -1,3 +1,4 @@
+/* Font Faces */
 @font-face {
     font-family: 'True Sage';
     src: url('fonts/TrueSage-Regular.ttf') format('truetype');
@@ -13,6 +14,7 @@
     src: url('fonts/Lorin-Regular.otf') format('opentype');
 }
 
+/* Global Body */
 body {
     font-family: 'Lorin', Arial, sans-serif; 
     background-color: #f5f5dc; /* Beige background */
@@ -22,218 +24,188 @@ body {
     line-height: 1.6;
 }
 
-h1 {
-    font-family: 'True Sage', serif; /* True Sage for the heading */
-    color: #636b2f; /* Dark Olive */
-    text-align: center;
-    font-size: 2.5em;
-    margin-top: 1.5rem;
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: 'True Sage', serif;
+    color: #636b2f;
     margin-bottom: 1rem;
 }
 
-h2 {
-    text-align: center; /* Center the text horizontally */
-    font-family: 'True Sage', serif; /* Optional: Ensure consistent font style */
-    margin-bottom: 1.5rem; /* Add some spacing below the heading */
-    color: #636b2f; /* Optional: Match the dark olive text */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1.5rem;
 }
 
-/* Navigation bar styling */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #6b8e23; /* Olive green */
+    background-color: #6b8e23;
     padding: 0.75rem;
-    border-radius: 15px; /* Rounded edges for the navigation bar */
+    border-radius: 15px;
     margin: 1rem auto;
-    width: 90%; /* Center the navigation bar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
-    font-family: 'Caviar Dreams', Arial, sans-serif; /* Body text uses Caviar Dreams */
+    font-family: 'Caviar Dreams', Arial, sans-serif;
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
-    transition: color 0.3s ease, background-color 0.3s ease;
     padding: 10px 15px;
-    border-radius: 12px; /* Rounded edges for nav links */
+    border-radius: 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle highlight on hover */
-    color: #f5f5dc; /* Beige text on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f5f5dc;
 }
 
+/* Section */
 section {
     background-color: white;
-    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
-    border-radius: 20px; /* Larger rounded edges for sections */
+    border: 1px solid rgba(193, 185, 175, 0.5);
+    border-radius: 20px;
     padding: 1.5rem;
     margin: 1rem auto;
     max-width: 900px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons */
-.button-container {
-    text-align: center;
-    margin-top: 1.5rem;
-}
-
-.button {
-    font-family: 'Caviar Dreams', Arial, sans-serif;
-    background-color: #6b8e23; /* Olive green */
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 20px; /* More rounded edges for modern look */
-    font-size: 1em;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button:hover {
-    background-color: #556b2f; /* Darker olive */
-    transform: scale(1.05); /* Subtle hover effect */
-}
-
-
-footer {
-    background-color: #636b2f; /* Olive green */
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-family: 'Caviar Dreams', Arial, sans-serif;
-    font-size: 0.9em;
-    border-radius: 10px; /* Rounded edges for footer */
-    margin: 1rem auto;
-    width: 90%; /* Center the footer */
-}
-
-.cards-container {
+/* Cards for Case Studies */
+.case-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 1.5rem; /* Space between cards */
-    margin: 1.5rem auto; /* Centering */
-    max-width: 880px; /* Overall grid width */
-    padding: 1rem; /* Internal spacing */
-    box-sizing: border-box; /* Ensure padding fits inside */
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 880px;
 }
 
-.card {
-    background-color: #636b2f; /* Dark olive background */
-    color: #f5f5dc; /* Light beige text */
-    border-radius: 10px; /* Rounded edges */
+.case-card {
+    background-color: #636b2f;
+    color: #f5f5dc;
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Hover effect for color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.card:hover {
-    background-color: #6b8e23; /* Regular olive background */
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+.case-card:hover {
+    background-color: #6b8e23;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card img {
-    width: 60px; /* Image size */
+.case-card img {
+    width: 60px;
     height: 60px;
     margin-bottom: 0.5rem;
-    border-radius: 10px; /* Rounded image corners */
+    border-radius: 10px;
 }
 
-.card h3 {
-    font-family: 'True Sage', serif;
-    font-size: 1.5em;
-    margin-bottom: 0.5rem;
-}
-
-.card p {
-    font-family: 'Lorin', Arial, sans-serif;
-    font-weight: 300; /* Light text */
-    font-size: 0.9em; /* Slightly smaller text for balance */
-    line-height: 1.5;
-}
-
-
-/* Container for all dropdowns */
-.dropdown-container {
+/* Drop Down Cards */
+.card-dropdown-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* Space between dropdowns */
-    margin: 1.5rem auto; /* Centering the container */
-    max-width: 800px; /* Limiting width */
-    padding: 1rem; /* Internal spacing for better layout */
-    box-sizing: border-box; /* Include padding in width calculations */
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 880px;
 }
 
-/* Individual dropdown box */
-.dropdown {
-    background-color: white; /* Background for the dropdown */
-    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-    overflow: hidden; /* Ensures no content spills outside */
+.card-dropdown {
+    background-color: #636b2f; /* Dark olive */
+    color: #f5f5dc; /* Beige text */
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
 }
 
-/* Header for dropdowns - clickable area */
-.dropdown-header {
+.card-dropdown-header {
     display: flex;
-    justify-content: space-between; /* Align text and arrow */
-    align-items: center; /* Vertical alignment */
-    padding: 1rem; /* Spacing inside the header */
-    background-color: #f5f5dc; /* Beige background */
-    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle border */
-    border-radius: 10px; /* Rounded corners for the header */
-    font-family: 'Lorin', Arial, sans-serif; /* Dropdown header font */
-    font-weight: bold; /* Bold text for the header */
-    color: #636b2f; /* Dark olive text */
-    cursor: pointer; /* Indicate it's clickable */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    cursor: pointer;
 }
 
-/* Arrow symbol for dropdown */
-.dropdown-header span.arrow {
-    font-size: 1.2rem; /* Slightly larger for visibility */
-    margin-left: 1rem; /* Space between text and arrow */
-    color: #636b2f; /* Same color as text */
+.card-dropdown-header:hover {
+    background-color: #556b2f; /* Darker olive hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover effect for dropdown header */
-.dropdown-header:hover {
-    background-color: rgba(193, 185, 175, 0.2); /* Subtle highlight */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+.card-dropdown-content {
+    display: none;
+    background-color: #556b2f; /* Slightly darker olive */
+    padding: 1rem;
+    border-top: 1px solid rgba(193, 185, 175, 0.5);
 }
 
-/* Content inside dropdown */
-.dropdown-content {
-    display: none; /* Hidden by default */
-    padding: 1rem; /* Internal spacing for content */
-    margin-top: 0.5rem; /* Space between header and content */
-    background-color: white; /* Content background */
-    border-top: 1px solid rgba(193, 185, 175, 0.3); /* Subtle divider */
+.card-dropdown-content p {
+    font-family: 'Lorin', Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.6;
 }
 
-/* Icon or image inside dropdown content */
-.dropdown-content img {
-    display: block; /* Ensures proper alignment */
-    margin: 0 auto 1rem; /* Center the image and add spacing below */
-    width: 60px; /* Resized for consistency */
-    height: 60px;
-    border-radius: 10px; /* Rounded corners for images */
+/* Precision Agriculture Cards */
+.precision-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 880px;
 }
 
-/* Text inside dropdown content */
-.dropdown-content p {
-    font-family: 'Lorin', Arial, sans-serif; /* Content font */
-    font-weight: 300; /* Light font weight for contrast */
-    font-size: 1em; /* Standard size */
-    color: #636b2f; /* Text color */
-    line-height: 1.6; /* Line spacing for readability */
+.precision-card {
+    background-color: #636b2f;
+    color: #f5f5dc;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.precision-card:hover {
+    background-color: #6b8e23;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.precision-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #636b2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem auto;
+    width: 90%;
+    font-family: 'Caviar Dreams', Arial, sans-serif;
+    font-size: 0.9em;
 }
