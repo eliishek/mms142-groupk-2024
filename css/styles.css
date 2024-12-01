@@ -60,7 +60,7 @@ section {
     border-radius: 20px; /* Larger rounded edges for sections */
     padding: 1.5rem;
     margin: 1rem auto;
-    max-width: 800px;
+    max-width: 900px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
