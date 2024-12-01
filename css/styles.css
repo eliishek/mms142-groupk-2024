@@ -14,7 +14,7 @@
     src: url('fonts/Lorin-Regular.otf') format('opentype');
 }
 
-/* Global Body */
+/* Global Styles */
 body {
     font-family: 'Lorin', Arial, sans-serif; 
     background-color: #f5f5dc; /* Beige background */
@@ -24,58 +24,51 @@ body {
     line-height: 1.6;
 }
 
-/* Headings */
-h1, h2, h3, h4 {
-    font-family: 'True Sage', serif;
-    color: #636b2f;
-    margin-bottom: 1rem;
-}
-
 h1 {
+    font-family: 'True Sage', serif; 
+    color: #636b2f;
     text-align: center;
     font-size: 2.5em;
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
     text-align: center;
-    font-size: 2em;
+    font-family: 'True Sage', serif; 
     margin-bottom: 1.5rem;
-}
-
-h3 {
-    font-size: 1.5em;
+    color: #636b2f; 
 }
 
 /* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #6b8e23;
+    background-color: #6b8e23; 
     padding: 0.75rem;
-    border-radius: 15px;
+    border-radius: 15px; 
     margin: 1rem auto;
-    width: 90%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 nav a {
-    font-family: 'Caviar Dreams', Arial, sans-serif;
+    font-family: 'Caviar Dreams', Arial, sans-serif; 
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
+    transition: color 0.3s ease, background-color 0.3s ease;
     padding: 10px 15px;
     border-radius: 12px;
-    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    color: #f5f5dc;
+    color: #f5f5dc; 
 }
 
-/* Section */
+/* Section Styling */
 section {
     background-color: white;
     border: 1px solid rgba(193, 185, 175, 0.5);
@@ -83,102 +76,130 @@ section {
     padding: 1.5rem;
     margin: 1rem auto;
     max-width: 900px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Cards for Case Studies */
-.case-cards-container {
+.cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin: 1.5rem auto;
     max-width: 880px;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-.case-card {
-    background-color: #636b2f;
-    color: #f5f5dc;
-    border-radius: 10px;
+.card {
+    background-color: #636b2f; 
+    color: #f5f5dc; 
+    border-radius: 10px; 
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
 }
 
-.case-card:hover {
-    background-color: #6b8e23;
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+.card:hover {
+    background-color: #6b8e23; 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
 
-.case-card img {
-    width: 60px;
+.card img {
+    width: 60px; 
     height: 60px;
     margin-bottom: 0.5rem;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
-/* Drop Down Cards */
-.card-dropdown-container {
+.card h3 {
+    font-family: 'True Sage', serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: 300; 
+    font-size: 0.9em; 
+    line-height: 1.5;
+}
+
+/* Dropdown Container for PIDS Study */
+.dropdown-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin: 1.5rem auto;
+    gap: 1rem; 
+    margin: 1.5rem auto; 
     max-width: 880px;
+    padding: 1rem; 
+    box-sizing: border-box; 
 }
 
-.card-dropdown {
-    background-color: #636b2f; /* Dark olive */
-    color: #f5f5dc; /* Beige text */
+.dropdown {
+    background-color: white;
+    border: 1px solid rgba(193, 185, 175, 0.5);
     border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    overflow: hidden; 
 }
 
-.card-dropdown-header {
+.dropdown-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
-    font-size: 1.3em;
-    cursor: pointer;
+    padding: 1rem;
+    background-color: #f5f5dc; 
+    border: 1px solid rgba(193, 185, 175, 0.5);
+    border-radius: 10px; 
+    font-family: 'Lorin', Arial, sans-serif; 
+    font-weight: bold; 
+    color: #636b2f; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
-.card-dropdown-header:hover {
-    background-color: #556b2f; /* Darker olive hover */
+.dropdown-header span.arrow {
+    font-size: 1.2rem; 
+    margin-left: 1rem; 
+    color: #636b2f; 
+}
+
+.dropdown-header:hover {
+    background-color: rgba(193, 185, 175, 0.2); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card-dropdown-content {
-    display: none;
-    background-color: #556b2f; /* Slightly darker olive */
-    padding: 1rem;
-    border-top: 1px solid rgba(193, 185, 175, 0.5);
+.dropdown-content {
+    display: none; 
+    padding: 1rem; 
+    margin-top: 0.5rem; 
+    background-color: white;
+    border-top: 1px solid rgba(193, 185, 175, 0.3); 
 }
 
-.card-dropdown-content p {
-    font-family: 'Lorin', Arial, sans-serif;
-    font-size: 0.9em;
+.dropdown-content p {
+    font-family: 'Lorin', Arial, sans-serif; 
+    font-weight: 300; 
+    font-size: 1em; 
     line-height: 1.6;
 }
 
 /* Precision Agriculture Cards */
 .precision-cards-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 1.5rem;
     margin: 1.5rem auto;
     max-width: 880px;
 }
 
 .precision-card {
-    background-color: #636b2f;
-    color: #f5f5dc;
-    border-radius: 10px;
+    background-color: #636b2f; 
+    color: #f5f5dc; 
+    border-radius: 10px; 
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -186,20 +207,20 @@ section {
 }
 
 .precision-card:hover {
-    background-color: #6b8e23;
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background-color: #6b8e23; 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .precision-card img {
-    width: 50px;
+    width: 50px; 
     height: 50px;
     margin-bottom: 0.5rem;
 }
 
 /* Footer */
 footer {
-    background-color: #636b2f;
+    background-color: #636b2f; 
     color: white;
     text-align: center;
     padding: 1rem;
