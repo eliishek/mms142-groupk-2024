@@ -116,7 +116,7 @@ section {
     overflow: hidden; 
 }
 
-.hero-image {
+.hero-image img {
     display: flex;
     justify-content: center;
     align-items: center; 
