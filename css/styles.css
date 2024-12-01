@@ -108,6 +108,21 @@ section {
     transform: scale(1.05);
 }
 
+.hero-section {
+    position: relative;
+    text-align: center;
+    background-color: #f5f5dc; /* Matches the page background for seamless integration */
+    padding: 2rem 0;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-bottom: 2rem;
+}
+
 /* Regular Cards (e.g., PIDS Findings) */
 .cards-container, .precision-cards-container {
     display: grid;
