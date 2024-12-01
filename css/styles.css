@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Lorin';
-    src: url('fonts/Lorin-Light.otf') format('opentype');
+    src: url('fonts/Lorin-Regular.otf') format('opentype');
 }
 
 body {
@@ -160,21 +160,22 @@ footer {
 
 .card p {
     font-family: 'Lorin', Arial, sans-serif; 
+    font-weight: 300;
     color: #636b2f;
     font-size: 0.95em; /* Slightly smaller paragraph text */
     line-height: 1.4;
 }
-
-
+/* Dropdown container */
 .dropdown-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 1.5rem;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the dropdowns */
 }
 
+/* Dropdown box */
 .dropdown {
     background-color: white;
     border: 1px solid rgba(193, 185, 175, 0.5);
@@ -182,6 +183,11 @@ footer {
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Space between text and arrow */
+    align-items: center;
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: 700; /* Bold for outer text */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -190,17 +196,36 @@ footer {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Dropdown arrow */
+.dropdown::after {
+    content: '⮟'; /* Dropdown arrow symbol */
+    font-size: 1.2em;
+    color: #636b2f; /* Match the text color */
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when the dropdown is active */
+.dropdown.open::after {
+    transform: rotate(180deg); /* Rotate arrow */
+}
+
+/* Dropdown content */
 .dropdown-content {
     display: none;
     padding: 1rem;
     margin-top: 1rem;
     border-top: 1px solid rgba(193, 185, 175, 0.3);
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: 300; /* Light for inner text */
+    line-height: 1.4;
+    color: #636b2f; /* Match the text color */
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown.open .dropdown-content {
+    display: block; /* Show the content when dropdown is open */
 }
 
+/* Image inside dropdown */
 .dropdown-content img {
     width: 60px;
     height: 60px;
