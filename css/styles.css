@@ -128,7 +128,7 @@ footer {
 }
 
 .card {
-    background-color: white;
+    background-color: #636b2f;
     border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -153,7 +153,7 @@ footer {
 
 .card h3 {
     font-family: 'True Sage', serif;
-    color: #556b2f;
+    color: #f5f5dc;
     font-size: 1.5em; /* Slightly larger title for readability */
     margin-bottom: 0.5rem;
 }
@@ -161,7 +161,7 @@ footer {
 .card p {
     font-family: 'Lorin', Arial, sans-serif; 
     font-weight: 300;
-    color: #636b2f;
+    color: #f5f5dc;
     font-size: 0.95em; /* Slightly smaller paragraph text */
     line-height: 1.4;
 }
