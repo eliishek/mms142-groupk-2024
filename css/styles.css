@@ -109,43 +109,31 @@ footer {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Two cards per row, responsive width */
-    gap: 1rem; /* Space between cards */
-    margin: 1.5rem auto; /* Centers the grid */
-    max-width: 800px; /* Limits the overall width of the grid */
-    padding: 1rem; /* Adds internal spacing */
-    box-sizing: border-box; /* Ensures padding is accounted for in width */
-}
-
-.cards-container {
-    display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 1rem; /* Space between cards */
-    margin: 0 auto; /* Center the grid */
-    padding: 1rem; /* Internal spacing within the section */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    max-width: 100%; /* Prevents overflow within the section */
+    gap: 1.5rem; /* Space between cards */
+    margin: 1.5rem auto; /* Centering */
+    max-width: 800px; /* Overall grid width */
+    padding: 1rem; /* Internal spacing */
+    box-sizing: border-box; /* Ensure padding fits inside */
 }
 
 .card {
-    background-color: #636b2f;
-    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #636b2f; /* Dark olive background */
+    color: #f5f5dc; /* Light beige text */
+    border-radius: 10px; /* Rounded edges */
     padding: 1rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 0.9em; /* Slightly smaller text for compact design */
-    max-width: 100%; /* Ensures cards don't exceed grid column width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .card img {
-    width: 60px; /* Scaled-down image */
+    width: 60px; /* Image size */
     height: 60px;
     margin-bottom: 0.5rem;
     border-radius: 10px; /* Rounded image corners */
@@ -153,18 +141,17 @@ footer {
 
 .card h3 {
     font-family: 'True Sage', serif;
-    color: #f5f5dc;
-    font-size: 1.2em; /* Slightly larger title for readability */
+    font-size: 1.2em;
     margin-bottom: 0.5rem;
 }
 
 .card p {
-    font-family: 'Lorin', Arial, sans-serif; 
-    font-weight: 300;
-    color: #f5f5dc;
-    font-size: 0.85em; /* Slightly smaller paragraph text */
-    line-height: 1.4;
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: 300; /* Light text */
+    font-size: 0.9em; /* Slightly smaller text for balance */
+    line-height: 1.5;
 }
+
 
 /* Container for all dropdowns */
 .dropdown-container {
