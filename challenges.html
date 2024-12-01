@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenges in Agriculture - Disruptive Agritech</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Script for toggling dropdown visibility
+        function toggleDropdown(element) {
+            const content = element.nextElementSibling;
+            const isVisible = content.style.display === "block";
+            content.style.display = isVisible ? "none" : "block";
+            element.querySelector(".arrow").textContent = isVisible ? "⮟" : "⮝";
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -61,8 +70,9 @@
         <h2>How Challenges Affect Agriculture in the Philippines</h2>
         <div class="dropdown-container">
             <div class="dropdown">
-                <div class="dropdown-header">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
                     <span>Reduced Crop Productivity</span>
+                    <span class="arrow">⮟</span>
                 </div>
                 <div class="dropdown-content">
                     <img src="img/placeholder.png" alt="Reduced Productivity Icon">
@@ -72,8 +82,9 @@
                 </div>
             </div>
             <div class="dropdown">
-                <div class="dropdown-header">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
                     <span>Farmer Poverty</span>
+                    <span class="arrow">⮟</span>
                 </div>
                 <div class="dropdown-content">
                     <img src="img/placeholder.png" alt="Farmer Poverty Icon">
@@ -82,39 +93,7 @@
                     </p>
                 </div>
             </div>
-            <div class="dropdown">
-                <div class="dropdown-header">
-                    <span>Higher Food Prices</span>
-                </div>
-                <div class="dropdown-content">
-                    <img src="img/placeholder.png" alt="Higher Food Prices Icon">
-                    <p>
-                        Reduced crop yields and rising production costs lead to higher food prices. As the supply of key crops like rice and corn shrinks, prices increase, making food less affordable for many Filipinos.
-                    </p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropdown-header">
-                    <span>Weakened Food Security</span>
-                </div>
-                <div class="dropdown-content">
-                    <img src="img/placeholder.png" alt="Weakened Food Security Icon">
-                    <p>
-                        Lower crop productivity and higher food prices undermine food security. The Philippines struggles to ensure an adequate and affordable food supply, particularly in rural areas, leaving it vulnerable to shortages.
-                    </p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropdown-header">
-                    <span>Increased Dependence on Imports</span>
-                </div>
-                <div class="dropdown-content">
-                    <img src="img/placeholder.png" alt="Increased Dependence Icon">
-                    <p>
-                        As local production falls short, the Philippines relies more on imported goods to meet demand. This increases vulnerability to global market fluctuations and trade disruptions, further jeopardizing food security.
-                    </p>
-                </div>
-            </div>
+            <!-- Additional dropdowns as needed -->
         </div>
     </section>
 </body>
