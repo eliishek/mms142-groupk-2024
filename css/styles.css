@@ -165,70 +165,69 @@ footer {
     font-size: 0.95em; /* Slightly smaller paragraph text */
     line-height: 1.4;
 }
-/* Dropdown container */
+
+/* Dropdown container styling */
 .dropdown-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    gap: 1rem; /* Space between dropdowns */
+    margin: 1.5rem auto;
     max-width: 800px;
-    margin: 0 auto; /* Center the dropdowns */
 }
 
-/* Dropdown box */
-.dropdown {
-    background-color: white;
-    border: 1px solid rgba(193, 185, 175, 0.5);
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+/* Dropdown header styling */
+.dropdown-header {
     display: flex;
     justify-content: space-between; /* Space between text and arrow */
     align-items: center;
-    font-family: 'Lorin', Arial, sans-serif;
-    font-weight: 700; /* Bold for outer text */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dropdown:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Dropdown arrow */
-.dropdown::after {
-    content: '⮟'; /* Dropdown arrow symbol */
-    font-size: 1.2em;
-    color: #636b2f; /* Match the text color */
-    transition: transform 0.3s ease;
-}
-
-/* Rotate the arrow when the dropdown is active */
-.dropdown.open::after {
-    transform: rotate(180deg); /* Rotate arrow */
-}
-
-/* Dropdown content */
-.dropdown-content {
-    display: none;
+    background-color: #f5f5dc; /* Beige background */
+    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
+    border-radius: 10px; /* Rounded corners */
     padding: 1rem;
-    margin-top: 1rem;
-    border-top: 1px solid rgba(193, 185, 175, 0.3);
     font-family: 'Lorin', Arial, sans-serif;
-    font-weight: 300; /* Light for inner text */
-    line-height: 1.4;
-    color: #636b2f; /* Match the text color */
+    font-weight: bold; /* Bold for header text */
+    color: #636b2f; /* Dark olive text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dropdown.open .dropdown-content {
-    display: block; /* Show the content when dropdown is open */
+.dropdown-header:hover {
+    background-color: #e6e6d3; /* Slightly lighter beige on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-/* Image inside dropdown */
+/* Arrow styling */
+.dropdown-header .arrow {
+    font-size: 1.2rem; /* Larger arrow */
+    color: #636b2f; /* Match text color */
+    margin-left: 0.5rem;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    background-color: white;
+    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1rem;
+    margin-top: 0.5rem; /* Space between header and content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Dropdown content image styling */
 .dropdown-content img {
-    width: 60px;
-    height: 60px;
+    width: 80px; /* Size of the placeholder image */
+    height: 80px;
     margin-bottom: 1rem;
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded image corners */
 }
+
+/* Dropdown content text styling */
+.dropdown-content p {
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: 300; /* Light weight for content text */
+    color: #636b2f; /* Dark olive text */
+    font-size: 0.95em;
+    line-height: 1.6; /* Comfortable line spacing */
+}
+
