@@ -105,10 +105,12 @@ footer {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr); /* Ensures 2 cards per row */
     gap: 1.5rem; /* Space between cards */
-    margin: 1.5rem auto; /* Center the container */
-    max-width: 900px; /* Increase the width for more spacious cards */
+    margin: 1.5rem auto; /* Centers the grid within the section */
+    max-width: 100%; /* Prevents cards from exceeding the section width */
+    padding: 1rem; /* Adds internal padding to avoid overflow */
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
 .card {
@@ -116,10 +118,10 @@ footer {
     border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 1.5rem; /* Increase padding for a more spacious look */
+    padding: 1.5rem; /* Adds space inside the card */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%; /* Ensure each card stretches fully in its grid cell */
+    max-width: 100%; /* Ensures card stays within its grid cell */
 }
 
 .card:hover {
@@ -128,8 +130,8 @@ footer {
 }
 
 .card img {
-    width: 100px; /* Adjust image size */
-    height: 100px;
+    width: 80px; /* Adjusted size to fit better */
+    height: 80px;
     margin-bottom: 1rem;
     border-radius: 10px; /* Rounded image corners */
 }
