@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Lorin';
-    src: url('fonts/Lorin-Regular.otf') format('opentype');
+    src: url('fonts/Lorin-Light.otf') format('opentype');
 }
 
 body {
@@ -154,14 +154,14 @@ footer {
 .card h3 {
     font-family: 'True Sage', serif;
     color: #556b2f;
-    font-size: 1.2em; /* Slightly larger title for readability */
+    font-size: 1.5em; /* Slightly larger title for readability */
     margin-bottom: 0.5rem;
 }
 
 .card p {
-    font-family: 'Caviar Dreams', Arial, sans-serif;
+    font-family: 'Lorin', Arial, sans-serif; 
     color: #636b2f;
-    font-size: 0.85em; /* Slightly smaller paragraph text */
+    font-size: 0.95em; /* Slightly smaller paragraph text */
     line-height: 1.4;
 }
 
