@@ -25,6 +25,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-family: 'True Sage', serif;
     font-size: 2.5em;
     margin-top: 1.5rem;
@@ -32,6 +33,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-family: 'True Sage', serif;
     color: #636b2f;
     margin-bottom: 1.5rem;
     font-size: 2em;
