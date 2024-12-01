@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Gilgan';
-    src: url('fonts/Gilgan-Regular.ttf') format('truetype');
+    src: url('fonts/Gilgan-Regular.otf') format('truetype');
 }
 
 body {
