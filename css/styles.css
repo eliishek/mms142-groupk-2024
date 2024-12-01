@@ -108,17 +108,14 @@ section {
     transform: scale(1.05);
 }
 
-.hero-section {
-    position: relative;
+.hero-image {
     text-align: center;
-    padding: 2rem 0;
+    margin: 2rem 0;
 }
 
-.hero-section img {
+.hero-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
-    margin-bottom: 2rem;
 }
 
 /* Regular Cards (e.g., PIDS Findings) */
