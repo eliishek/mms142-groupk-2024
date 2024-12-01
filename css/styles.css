@@ -247,61 +247,70 @@ section {
     display: block;
 }
 
-/* Team Container */
+/* Team Section Styling */
 .team-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 per row if space allows */
-    gap: 2rem; /* Space between team cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust to 3 per row */
+    gap: 2rem;
     margin: 2rem auto;
-    max-width: 1200px; /* Adjust maximum width */
+    max-width: 1200px;
     padding: 1rem;
-    box-sizing: border-box;
 }
 
-/* Team Card */
 .team-card {
-    background-color: #637355; /* Olive green */
-    color: #f5f5dc; /* Beige text */
+    position: relative;
+    background-color: #4a5a28; /* Dark olive green */
+    border-radius: 20px;
     text-align: center;
-    padding: 1rem;
-    border-radius: 20px; /* Rounded edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
 }
 
 .team-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+    background-color: #6b8e23;
+    transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Arched Image */
 .team-image {
-    width: 100%;
-    height: 150px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 80px;
+    background-color: white; 
+    border-radius: 50%; 
     overflow: hidden;
-    border-radius: 50%; /* Circular images */
-    margin-bottom: 1rem;
-    background-color: #f5f5dc; /* Light beige background for padding */
+    border: 4px solid #4a5a28; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .team-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure image fills the circle */
+    object-fit: cover; 
 }
 
-/* Team Details */
+.team-details {
+    margin-top: 50px; 
+    color: #f5f5dc; /* Beige text */
+    font-family: 'Caviar Dreams', Arial, sans-serif;
+}
+
 .team-details h3 {
-    font-family: 'True Sage', serif;
-    margin: 0.5rem 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .team-details p {
-    font-family: 'Lorin', Arial, sans-serif;
-    font-size: 0.9em;
-    color: #eae5d8; /* Light beige */
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 300;
 }
+
 
 
 
