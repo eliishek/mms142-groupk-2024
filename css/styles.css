@@ -114,7 +114,7 @@ section {
 }
 
 .hero-image img {
-    max-width: 90%; 
+    max-width: 85%; 
     max-height: 90vh; 
     height: auto;   
     display: inline-block; 
