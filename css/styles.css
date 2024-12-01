@@ -104,12 +104,22 @@ footer {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Ensures 2 cards per row */
-    gap: 1.5rem; /* Space between cards */
-    margin: 1.5rem auto; /* Centers the grid within the section */
-    max-width: 100%; /* Prevents cards from exceeding the section width */
-    padding: 1rem; /* Adds internal padding to avoid overflow */
-    box-sizing: border-box; /* Ensures padding is included in the element's width */
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Two cards per row, responsive width */
+    gap: 1rem; /* Space between cards */
+    margin: 1.5rem auto; /* Centers the grid */
+    max-width: 800px; /* Limits the overall width of the grid */
+    padding: 1rem; /* Adds internal spacing */
+    box-sizing: border-box; /* Ensures padding is accounted for in width */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 1rem; /* Space between cards */
+    margin: 0 auto; /* Center the grid */
+    padding: 1rem; /* Internal spacing within the section */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    max-width: 100%; /* Prevents overflow within the section */
 }
 
 .card {
@@ -117,10 +127,11 @@ footer {
     border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 1.5rem; /* Adds space inside the card */
+    padding: 1rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 100%; /* Ensures card stays within its grid cell */
+    font-size: 0.9em; /* Slightly smaller text for compact design */
+    max-width: 100%; /* Ensures cards don't exceed grid column width */
 }
 
 .card:hover {
@@ -129,25 +140,26 @@ footer {
 }
 
 .card img {
-    width: 80px; /* Adjusted size to fit better */
-    height: 80px;
-    margin-bottom: 1rem;
+    width: 60px; /* Scaled-down image */
+    height: 60px;
+    margin-bottom: 0.5rem;
     border-radius: 10px; /* Rounded image corners */
 }
 
 .card h3 {
     font-family: 'True Sage', serif;
     color: #556b2f;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Slightly larger title for readability */
     margin-bottom: 0.5rem;
 }
 
 .card p {
     font-family: 'Caviar Dreams', Arial, sans-serif;
     color: #636b2f;
-    font-size: 1em;
+    font-size: 0.85em; /* Slightly smaller paragraph text */
     line-height: 1.4;
 }
+
 
 .dropdown-container {
     display: flex;
