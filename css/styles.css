@@ -125,17 +125,17 @@ footer {
 }
 
 .card {
-    background-color: #636b2f; /*Dark olive background */
+    background-color: #636b2f; /* Dark olive background */
     color: #f5f5dc; /* Light beige text */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Hover effect for color */
 }
 
 .card:hover {
-    background-color: #6b8e23; /* olive background */
+    background-color: #6b8e23; /* Regular olive background */
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
