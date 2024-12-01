@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies - AgriTech in the Philippines</title>
+    <title>Case Studies - AgriTech</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Script for toggling dropdown visibility
+        function toggleDropdown(element) {
+            const content = element.nextElementSibling;
+            const isVisible = content.style.display === "block";
+            content.style.display = isVisible ? "none" : "block";
+            element.querySelector(".arrow").textContent = isVisible ? "⮟" : "⮝";
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -19,66 +28,113 @@
     <header>
         <h1>Agriculture Technology in the Philippines</h1>
     </header>
+
+    <!-- Digital Transformation Section -->
     <section>
         <h2>Digital Transformation in Philippine Agriculture</h2>
         <p>
             A 2024 webinar conducted by the Philippine Institute for Development Studies (PIDS) emphasized the need to make the Philippines’ agri-food systems and rural agro-enterprises more inclusive. The webinar highlighted digital technology as a key enabler of this transformation, capable of enhancing productivity, improving market access, and addressing inefficiencies in the agricultural sector.
         </p>
-        <h3>Key Findings from PIDS Study</h3>
-        <ul>
-            <li>Digital technologies are increasingly adopted by agricultural establishments.</li>
-            <li>However, only 50% of farmers and fisherfolk currently receive sufficient information to optimize their operations, highlighting significant gaps in accessibility.</li>
-        </ul>
-        <h3>Study Recommendations</h3>
-        <ul>
-            <li>Unified Data Systems: Develop centralized platforms for government decision-making and advisory services.</li>
-            <li>Centralized Portals: Consolidate all government digital agriculture resources into one easily accessible portal.</li>
-            <li>Digital Farm Management: Integrate digital solutions into the Department of Agriculture’s clustering programs for streamlined operations.</li>
-            <li>Climate Resiliency: Expand decision support systems to support diversification and climate adaptation.</li>
-            <li>E-commerce Marketplaces: Establish a centralized online marketplace to improve MSME market access.</li>
-            <li>Food Safety and Traceability: Enforce traceability standards and food safety compliance.</li>
-            <li>Private Sector Involvement: Collaborate with private companies to enhance digital agriculture initiatives.</li>
-            <li>Skill Development: Offer training programs for farmers and landless agricultural workers to improve digital literacy and inclusivity.</li>
-        </ul>
-        <p>
-            Further analysis underscores the importance of involving stakeholders such as cooperatives, local government units, and private companies in creating tailored digital solutions that cater to the specific needs of farmers.
-        </p>
-    </section>
-    <section>
-        <h2>Disruptive Technologies in Philippine Agriculture</h2>
-        <h3>E-commerce: Revolutionizing Farmer-Consumer Connections</h3>
-        <p>
-            E-commerce platforms like <strong>Kadiwa ni Ani at Kita</strong> empower farmers by eliminating middlemen and enabling direct connections with consumers. <strong>eKadiwa</strong>, launched in 2020, provides an online marketplace with features like data-driven logistics, urban market access, and nationwide reach.
-        </p>
         <div class="cards-container">
+            <!-- Card 1 -->
             <div class="card">
-                <h3>eKadiwa</h3>
-                <p>Improves logistics, reduces waste, and connects farmers to urban markets with nationwide expansion plans.</p>
+                <h3>Key Findings from PIDS Study</h3>
+                <ul>
+                    <li>Digital technologies are increasingly adopted by agricultural establishments.</li>
+                    <li>Only 50% of farmers and fisherfolk receive sufficient information to optimize their operations, highlighting accessibility gaps.</li>
+                </ul>
             </div>
+            <!-- Card 2 -->
             <div class="card">
-                <h3>Kita</h3>
-                <p>Digitizes agricultural supply chains and improves inventory management and supply chain transparency.</p>
-            </div>
-            <div class="card">
-                <h3>Mayani</h3>
-                <p>Links farmers to markets, ensures fair pricing, and leverages real-time data for informed decisions.</p>
+                <h3>Study Recommendations</h3>
+                <ul>
+                    <li>Unified Data Systems</li>
+                    <li>Centralized Portals</li>
+                    <li>Digital Farm Management</li>
+                    <li>Climate Resiliency</li>
+                    <li>E-commerce Marketplaces</li>
+                    <li>Food Safety and Traceability</li>
+                    <li>Private Sector Involvement</li>
+                    <li>Skill Development</li>
+                </ul>
             </div>
         </div>
     </section>
+
+    <!-- Collaboration Section -->
     <section>
-        <h2>Precision Agriculture: A Disruptive Technology</h2>
+        <h2>Collaboration for Inclusivity</h2>
         <p>
-            Precision agriculture uses technologies like sensors and GPS to optimize resource allocation and boost sustainability. Benefits include:
-        </p>
-        <ul>
-            <li>Efficient resource use, reducing waste and costs.</li>
-            <li>Higher yields and profitability.</li>
-            <li>Minimized environmental impact.</li>
-        </ul>
-        <p>
-            These innovations address challenges like resource scarcity and climate adaptation, transforming farming practices into a sustainable industry.
+            Further analysis underscores the importance of involving stakeholders such as cooperatives, local government units, and private companies in creating tailored digital solutions that cater to the specific needs of farmers. With coordinated efforts, these technologies can ensure that even marginalized communities are empowered to benefit from the agricultural advancements.
         </p>
     </section>
+
+    <!-- Disruptive Technologies Section -->
+    <section>
+        <h2>Disruptive Technologies in Philippine Agriculture</h2>
+
+        <!-- Dropdown for E-commerce -->
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>E-commerce: Revolutionizing Farmer-Consumer Connections</span>
+                    <span class="arrow">⮟</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        E-commerce platforms like "Kadiwa ni Ani at Kita" provide alternative direct market channels, allowing farmers' cooperatives to bypass middlemen and access fair prices for their produce.
+                    </p>
+                    <p>
+                        Case Study: <strong>eKadiwa</strong>
+                        <ul>
+                            <li>Improved Efficiency</li>
+                            <li>Farmer Empowerment</li>
+                            <li>Nationwide Reach</li>
+                            <li>Logistics Partnerships</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>AgriTech Startups Transforming Agriculture</span>
+                    <span class="arrow">⮟</span>
+                </div>
+                <div class="dropdown-content">
+                    <h3>Kita: Improving Supply Chains</h3>
+                    <p>
+                        Kita digitizes the agricultural supply chain in the Philippines, sourcing fruits and vegetables directly from farmers and selling to B2B clients.
+                    </p>
+                    <h3>Mayani: Connecting Farmers to Markets</h3>
+                    <p>
+                        Mayani connects smallholder farmers directly to businesses and consumers, offering fair pricing, market expansion, and data-driven decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precision Agriculture Section -->
+    <section>
+        <h2>Precision Agriculture: A Disruptive Technology</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Innovations and Benefits</h3>
+                <ul>
+                    <li>Efficient Resource Use</li>
+                    <li>Boosted Yields</li>
+                    <li>Enhanced Sustainability</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Revolutionizing Farming</h3>
+                <p>
+                    Precision agriculture leverages sensors, GPS, and data analytics to optimize resource allocation, manage crops efficiently, and address challenges like resource scarcity.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 AgriTech Philippines. All rights reserved.</p>
     </footer>
