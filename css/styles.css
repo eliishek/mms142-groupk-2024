@@ -54,12 +54,13 @@ nav a:hover {
     color: #f5f5dc; /* Beige text on hover */
 }
 
-.styled-paragraph {
-    background-color: #fff; /* White background for contrast */
+section {
+    background-color: white;
     border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Padding for spacing inside the box */
-    margin: 1rem 0; /* Space between paragraphs */
+    border-radius: 20px; /* Larger rounded edges for sections */
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
