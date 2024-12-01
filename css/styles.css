@@ -120,7 +120,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 100vh;
+    max-width: 90vw; 
+    max-height: 90vh;
     overflow: hidden;
     background-color: #1b1c0e; 
 }
