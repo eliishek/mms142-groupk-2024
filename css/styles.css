@@ -109,13 +109,17 @@ section {
 }
 
 .hero-image {
-    text-align: center;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    overflow: hidden; 
 }
 
 .hero-image img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    object-fit: contain; 
 }
 
 /* Regular Cards (e.g., PIDS Findings) */
