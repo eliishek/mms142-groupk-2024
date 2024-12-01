@@ -119,7 +119,7 @@ footer {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
     gap: 1.5rem; /* Space between cards */
     margin: 1.5rem auto; /* Centering */
-    max-width: 800px; /* Overall grid width */
+    max-width: 880px; /* Overall grid width */
     padding: 1rem; /* Internal spacing */
     box-sizing: border-box; /* Ensure padding fits inside */
 }
