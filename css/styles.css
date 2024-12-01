@@ -105,10 +105,10 @@ footer {
 /* Cards for Key Challenges */
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Ensures 2 cards per row */
     gap: 1.5rem;
     margin: 1.5rem auto;
-    max-width: 1200px;
+    max-width: 800px; /* Adjust for a smaller layout */
 }
 
 .card {
