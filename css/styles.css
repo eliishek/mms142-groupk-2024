@@ -110,12 +110,13 @@ section {
 
 .hero-image {
     text-align: center;
-    margin: 2rem 0; 
+    margin: 2rem 0;
 }
 
 .hero-image img {
-    max-width: 100%; 
-    height: auto;   
+    max-width: 90%; 
+    max-height: 90vh; 
+    height: auto;     
     display: inline-block; 
 }
 
