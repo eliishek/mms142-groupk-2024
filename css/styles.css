@@ -30,6 +30,15 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
+h1 {
+    font-family: 'True Sage', serif; /* True Sage for the heading */
+    color: #556b2f; /* Olive green */
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 /* Navigation bar styling */
 nav {
     display: flex;
