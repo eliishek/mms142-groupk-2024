@@ -31,6 +31,13 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    text-align: center; /* Center the text horizontally */
+    font-family: 'True Sage', serif; /* Optional: Ensure consistent font style */
+    margin-bottom: 1.5rem; /* Add some spacing below the heading */
+    color: #636b2f; /* Optional: Match the dark olive text */
+}
+
 /* Navigation bar styling */
 nav {
     display: flex;
