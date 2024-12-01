@@ -117,9 +117,11 @@ section {
 }
 
 .hero-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; 
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 60%;
+    min-height: 60%;
+    object-fit: contain;
 }
 
 /* Regular Cards (e.g., PIDS Findings) */
