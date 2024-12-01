@@ -7,7 +7,7 @@
     font-family: 'Caviar Dreams';
     src: url('fonts/CaviarDreams-Regular.ttf') format('truetype');
 }
-/* General body styling */
+
 body {
     font-family: 'Caviar Dreams', Arial, sans-serif; /* Body text uses Caviar Dreams */
     background-color: #f5f5dc; /* Beige background */
@@ -19,7 +19,7 @@ body {
 
 h1 {
     font-family: 'True Sage', serif; /* True Sage for the heading */
-    color: #556b2f; /* Olive green */
+    color: #636b2f; /* Dark Olive */
     text-align: center;
     font-size: 2.5em;
     margin-top: 1.5rem;
@@ -54,14 +54,12 @@ nav a:hover {
     color: #f5f5dc; /* Beige text on hover */
 }
 
-/* Section content */
-section {
-    background-color: white;
+.styled-paragraph {
+    background-color: #fff; /* White background for contrast */
     border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
-    border-radius: 20px; /* Larger rounded edges for sections */
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 800px;
+    border-radius: 10px; /* Rounded edges */
+    padding: 1rem; /* Padding for spacing inside the box */
+    margin: 1rem 0; /* Space between paragraphs */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
