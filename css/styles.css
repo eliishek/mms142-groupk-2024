@@ -154,7 +154,7 @@ footer {
 .card h3 {
     font-family: 'True Sage', serif;
     color: #f5f5dc;
-    font-size: 1.5em; /* Slightly larger title for readability */
+    font-size: 1.2em; /* Slightly larger title for readability */
     margin-bottom: 0.5rem;
 }
 
@@ -162,7 +162,7 @@ footer {
     font-family: 'Lorin', Arial, sans-serif; 
     font-weight: 300;
     color: #f5f5dc;
-    font-size: 0.95em; /* Slightly smaller paragraph text */
+    font-size: 0.85em; /* Slightly smaller paragraph text */
     line-height: 1.4;
 }
 
