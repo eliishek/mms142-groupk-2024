@@ -16,7 +16,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Lorin', Arial, sans-serif; 
+    font-family: 'Lorin', Arial, sans-serif;
     background-color: #f5f5dc; /* Beige background */
     color: #636b2f; /* Dark olive text */
     margin: 0;
@@ -24,36 +24,37 @@ body {
     line-height: 1.6;
 }
 
-h1 {
-    font-family: 'True Sage', serif; 
-    color: #636b2f;
+h1, h2 {
     text-align: center;
-    font-size: 2.5em;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    color: #636b2f;
+    margin-bottom: 1.5rem;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'True Sage', serif; 
-    margin-bottom: 1.5rem;
-    color: #636b2f; 
+h1 {
+    font-family: 'True Sage', serif;
+    font-size: 2.5em;
+    margin-top: 1.5rem;
+}
+
+h2, h3 {
+    font-family: 'True Sage', serif;
+    font-size: 1.8em;
 }
 
 /* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #6b8e23; 
+    background-color: #6b8e23; /* Olive green */
     padding: 0.75rem;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin: 1rem auto;
-    width: 90%; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
-    font-family: 'Caviar Dreams', Arial, sans-serif; 
+    font-family: 'Caviar Dreams', Arial, sans-serif;
     color: white;
     text-decoration: none;
     margin: 0 15px;
@@ -65,7 +66,7 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    color: #f5f5dc; 
+    color: #f5f5dc;
 }
 
 /* Section Styling */
@@ -76,74 +77,74 @@ section {
     padding: 1.5rem;
     margin: 1rem auto;
     max-width: 900px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Cards for Case Studies */
-.cards-container {
+.button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.button {
+    font-family: 'Caviar Dreams', Arial, sans-serif;
+    background-color: #6b8e23;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #556b2f;
+    transform: scale(1.05);
+}
+
+/* Regular Cards (e.g., PIDS Findings) */
+.cards-container, .precision-cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible layout */
     gap: 1.5rem;
     margin: 1.5rem auto;
-    max-width: 880px;
     padding: 1rem;
     box-sizing: border-box;
 }
 
-.card {
-    background-color: #636b2f; 
-    color: #f5f5dc; 
-    border-radius: 10px; 
+.card, .precision-card {
+    background-color: #636b2f; /* Olive green */
+    color: #f5f5dc; /* Beige text */
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.card:hover {
-    background-color: #6b8e23; 
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+.card:hover, .precision-card:hover {
+    background-color: #6b8e23; /* Lighter olive */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card img {
-    width: 60px; 
-    height: 60px;
-    margin-bottom: 0.5rem;
-    border-radius: 10px; 
-}
-
-.card h3 {
-    font-family: 'True Sage', serif;
-    font-size: 1.5em;
+.card img, .precision-card img {
+    width: 50px;
+    height: 50px;
     margin-bottom: 0.5rem;
 }
 
-.card p {
-    font-family: 'Lorin', Arial, sans-serif;
-    font-weight: 300; 
-    font-size: 0.9em; 
-    line-height: 1.5;
-}
-
-/* Dropdown Container for PIDS Study */
+/* Regular Dropdown */
 .dropdown-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem; 
-    margin: 1.5rem auto; 
-    max-width: 880px;
-    padding: 1rem; 
-    box-sizing: border-box; 
-}
-
-.dropdown {
-    background-color: white;
-    border: 1px solid rgba(193, 185, 175, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    overflow: hidden; 
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .dropdown-header {
@@ -151,76 +152,77 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #f5f5dc; 
+    background-color: #f5f5dc; /* Beige */
     border: 1px solid rgba(193, 185, 175, 0.5);
-    border-radius: 10px; 
-    font-family: 'Lorin', Arial, sans-serif; 
-    font-weight: bold; 
-    color: #636b2f; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
-}
-
-.dropdown-header span.arrow {
-    font-size: 1.2rem; 
-    margin-left: 1rem; 
-    color: #636b2f; 
+    border-radius: 10px;
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: bold;
+    color: #636b2f;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dropdown-header:hover {
-    background-color: rgba(193, 185, 175, 0.2); 
+    background-color: rgba(193, 185, 175, 0.2);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
+.dropdown-header span.arrow {
+    font-size: 1.2rem;
+    color: #636b2f;
+}
+
 .dropdown-content {
-    display: none; 
-    padding: 1rem; 
-    margin-top: 0.5rem; 
-    background-color: white;
-    border-top: 1px solid rgba(193, 185, 175, 0.3); 
-}
-
-.dropdown-content p {
-    font-family: 'Lorin', Arial, sans-serif; 
-    font-weight: 300; 
-    font-size: 1em; 
-    line-height: 1.6;
-}
-
-/* Precision Agriculture Cards */
-.precision-cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 1.5rem;
-    margin: 1.5rem auto;
-    max-width: 880px;
-}
-
-.precision-card {
-    background-color: #636b2f; 
-    color: #f5f5dc; 
-    border-radius: 10px; 
+    display: none;
     padding: 1rem;
-    text-align: center;
+    margin-top: 0.5rem;
+    background-color: white;
+    border-top: 1px solid rgba(193, 185, 175, 0.3);
+}
+
+.dropdown-header.active + .dropdown-content {
+    display: block;
+}
+
+/* Dropdown-Cards */
+.case-study-dropdown {
+    background-color: #636b2f;
+    color: #f5f5dc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.precision-card:hover {
-    background-color: #6b8e23; 
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+.case-study-dropdown:hover {
+    background-color: #6b8e23;
+    transform: translateY(-5px);
 }
 
-.precision-card img {
-    width: 50px; 
-    height: 50px;
-    margin-bottom: 0.5rem;
+.case-study-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.case-study-content {
+    display: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    color: #636b2f;
+    border-top: 1px solid rgba(193, 185, 175, 0.3);
+}
+
+.case-study-dropdown.active .case-study-content {
+    display: block;
 }
 
 /* Footer */
 footer {
-    background-color: #636b2f; 
+    background-color: #636b2f;
     color: white;
     text-align: center;
     padding: 1rem;
