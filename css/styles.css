@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Lorin';
-    src: url('fonts/Lorin-Regular.otf') format('truetype');
+    src: url('fonts/Lorin-Regular.otf') format('opentype');
 }
 
 body {
