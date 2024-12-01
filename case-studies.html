@@ -7,20 +7,36 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
         // Script for toggling dropdown visibility
-        function toggleDropdown(element) {
-            const allDropdowns = document.querySelectorAll('.dropdown-content');
+            function toggleDropdown(element) {
+            const allDropdowns = document.querySelectorAll('.e-commerce-content'); // Only target e-commerce dropdowns
             allDropdowns.forEach((dropdown) => {
                 if (dropdown !== element.nextElementSibling) {
                     dropdown.style.display = "none"; // Close other dropdowns
                     dropdown.previousElementSibling.querySelector(".arrow").textContent = "⮟";
                 }
             });
-
+        
             const content = element.nextElementSibling;
             const isVisible = content.style.display === "block";
             content.style.display = isVisible ? "none" : "block";
             element.querySelector(".arrow").textContent = isVisible ? "⮟" : "⮝";
         }
+        
+        function toggleStartupDropdown(element) {
+            const allStartupDropdowns = document.querySelectorAll('.startup-content'); // Only target startup dropdowns
+            allStartupDropdowns.forEach((dropdown) => {
+                if (dropdown !== element.nextElementSibling) {
+                    dropdown.style.display = "none"; // Close other dropdowns
+                    dropdown.previousElementSibling.querySelector(".arrow").textContent = "⮟";
+                }
+            });
+        
+            const content = element.nextElementSibling;
+            const isVisible = content.style.display === "block";
+            content.style.display = isVisible ? "none" : "block";
+            element.querySelector(".arrow").textContent = isVisible ? "⮟" : "⮝";
+        }
+
     </script>
 </head>
 <body>
@@ -152,17 +168,17 @@
     <section>
         <h2>E-commerce: Revolutionizing Farmer-Consumer Connections</h2>
         <p>E-commerce, for example, is revolutionizing the way farmers connect with consumers. Platforms like "Kadiwa ni Ani at Kita" (One Idea, One Thought for Bountiful Harvests and Incomes) provide alternative direct market channels, allowing farmers' cooperatives and associations (FCAs) to bypass middlemen and access fair prices for their produce (Department of Agriculture, 2022). This not only benefits farmers but also empowers consumers with greater access to fresh, locally sourced products.</p>
-        <div class="dropdown">
+        <div class="dropdown e-commerce-dropdown">
             <div class="dropdown-header" onclick="toggleDropdown(this)">
                 <h3>Case Study: eKadiwa</h3>
                 <span class="arrow">⮟</span>
             </div>
-            <div class="dropdown-content">
+            <div class="dropdown-content e-commerce-content">
                 <p>To further enhance the connection between farmers and consumers eKadiwa was launched in 2020 which serves as an online marketplace where consumers can conveniently order farm products through a mobile phone or computer. Initially focused on Metro Manila, eKadiwa aims to expand nationwide, linking producers and consumers across urban areas. Key features include:
 </p>
                 <ul>
                     <li>Improved Efficiency: Data analytics optimize logistics, reduce waste, and enhance supply chain operations.</li>
-                    <li>Farmer Empowerment: Farmers registered under the Registry System for Basic Sectors in Agriculture (RSBSA) gain direct access to urban markets./li>
+                    <li>Farmer Empowerment: Farmers registered under the Registry System for Basic Sectors in Agriculture (RSBSA) gain direct access to urban markets.</li>
                     <li>Nationwide Reach: Initially focused on Metro Manila, eKadiwa plans to expand nationwide to connect more producers with consumers.</li>
                     <li>Logistics Partnerships: Collaborations with services like Mober, Lalamove, and Grab ensure timely delivery of fresh produce.</li>
                 </ul>
@@ -174,13 +190,12 @@
     <!-- AgriTech Startups Section -->
     <section>
         <h2>AgriTech Startups Transforming Agriculture</h2>
-        <div class="cards-container">
-            <div class="dropdown case-study-dropdown">
-                <div class="dropdown-header" onclick="toggleDropdown(this)">
-                    <h3>Kita: Improving Supply Chains</h3>
-                    <span class="arrow">⮟</span>
-                </div>
-                <div class="dropdown-content">
+       <div class="startup-dropdown">
+            <div class="dropdown-header" onclick="toggleStartupDropdown(this)">
+                <h3>Kita: Improving Supply Chains</h3>
+                <span class="arrow">⮟</span>
+            </div>
+                <div class="dropdown-content startup-content">
                     <p>Kita digitizes the agricultural supply chain for efficiency.</p>
                     <ul>
                         <li>Improved inventory management for farmers.</li>
@@ -189,12 +204,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="dropdown case-study-dropdown">
-                <div class="dropdown-header" onclick="toggleDropdown(this)">
+            <div class="startup-dropdown">
+                <div class="dropdown-header" onclick="toggleStartupDropdown(this)">
                     <h3>Mayani: Connecting Farmers</h3>
                     <span class="arrow">⮟</span>
-                </div>
-                <div class="dropdown-content">
+            </div>
+                <div class="dropdown-content startup-content">
                     <p>Mayani connects smallholder farmers to businesses and consumers.</p>
                     <ul>
                         <li>Fair Pricing: Ensures farmers receive fair compensation.</li>
