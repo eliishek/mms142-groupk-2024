@@ -39,7 +39,7 @@ h2 {
     font-size: 2em;
 }
 
- h3 {
+h3 {
     text-align: center;
     font-family: 'True Sage', serif;
     font-size: 1.5em;
@@ -104,7 +104,7 @@ section {
 }
 
 .button:hover {
-    background-color: #637355;
+    background-color: #556b2f;
     transform: scale(1.05);
 }
 
@@ -189,9 +189,9 @@ section {
 }
 
 /* Dropdown-Cards */
-.case-study-dropdown {
-    background-color: #636b2f;
-    color: #f5f5dc;
+.case-study-dropdown, .startup-dropdown {
+    background-color: #636b2f; /* Olive green */
+    color: #f5f5dc; /* Beige text */
     padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 1.5rem;
@@ -200,27 +200,38 @@ section {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.case-study-dropdown:hover {
+.case-study-dropdown:hover, .startup-dropdown:hover {
     background-color: #6b8e23;
     transform: translateY(-5px);
 }
 
-.case-study-header {
+.case-study-header, .startup-dropdown .dropdown-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Lorin', Arial, sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #f5f5dc; /* Beige */
+    color: #636b2f; /* Olive */
+    border: 1px solid rgba(193, 185, 175, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.case-study-content {
+.case-study-content, .startup-content {
     display: none;
     padding: 1rem;
     margin-top: 1rem;
     background-color: white;
-    color: #636b2f;
-    border-top: 1px solid rgba(193, 185, 175, 0.3);
+    color: #636b2f; /* Olive */
+    border: 1px solid rgba(193, 185, 175, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.case-study-dropdown.active .case-study-content {
+.case-study-dropdown.active .case-study-content,
+.startup-dropdown.active .startup-content {
     display: block;
 }
 
@@ -236,5 +247,3 @@ footer {
     font-family: 'Caviar Dreams', Arial, sans-serif;
     font-size: 0.9em;
 }
-
-
