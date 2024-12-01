@@ -102,7 +102,6 @@ footer {
     width: 90%; /* Center the footer */
 }
 
-
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Ensures 2 cards per row */
@@ -149,7 +148,6 @@ footer {
     font-size: 1em;
     line-height: 1.4;
 }
-
 
 .dropdown-container {
     display: flex;
