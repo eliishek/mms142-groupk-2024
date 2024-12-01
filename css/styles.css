@@ -102,3 +102,51 @@ footer {
     margin: 1rem auto;
     width: 90%; /* Center the footer */
 }
+
+/* Challenge container */
+.challenge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Space between boxes */
+    margin-top: 1.5rem;
+}
+
+.challenge-box {
+    background-color: white;
+    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.challenge-box:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.challenge-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+/* Challenge titles */
+.challenge-box h2 {
+    font-family: 'True Sage', serif;
+    color: #556b2f;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+/* Challenge text */
+.challenge-box p {
+    font-family: 'Caviar Dreams', Arial, sans-serif;
+    color: #636b2f;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+
