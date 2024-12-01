@@ -43,7 +43,7 @@ nav {
 }
 
 nav a {
-    font-family: 'True Sage', serif; /* Use True Sage for navigation links */
+    font-family: 'Caviar Dreams', Arial, sans-serif; /* Body text uses Caviar Dreams */
     color: white;
     text-decoration: none;
     margin: 0 15px;
