@@ -166,68 +166,79 @@ footer {
     line-height: 1.4;
 }
 
-/* Dropdown container styling */
+/* Container for all dropdowns */
 .dropdown-container {
     display: flex;
     flex-direction: column;
     gap: 1rem; /* Space between dropdowns */
-    margin: 1.5rem auto;
-    max-width: 800px;
+    margin: 1.5rem auto; /* Centering the container */
+    max-width: 800px; /* Limiting width */
+    padding: 1rem; /* Internal spacing for better layout */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
-/* Dropdown header styling */
+/* Individual dropdown box */
+.dropdown {
+    background-color: white; /* Background for the dropdown */
+    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    overflow: hidden; /* Ensures no content spills outside */
+}
+
+/* Header for dropdowns - clickable area */
 .dropdown-header {
     display: flex;
-    justify-content: space-between; /* Space between text and arrow */
-    align-items: center;
+    justify-content: space-between; /* Align text and arrow */
+    align-items: center; /* Vertical alignment */
+    padding: 1rem; /* Spacing inside the header */
     background-color: #f5f5dc; /* Beige background */
-    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 1rem;
-    font-family: 'Lorin', Arial, sans-serif;
-    font-weight: bold; /* Bold for header text */
+    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle border */
+    border-radius: 10px; /* Rounded corners for the header */
+    font-family: 'Lorin', Arial, sans-serif; /* Dropdown header font */
+    font-weight: bold; /* Bold text for the header */
     color: #636b2f; /* Dark olive text */
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
+/* Arrow symbol for dropdown */
+.dropdown-header span.arrow {
+    font-size: 1.2rem; /* Slightly larger for visibility */
+    margin-left: 1rem; /* Space between text and arrow */
+    color: #636b2f; /* Same color as text */
+}
+
+/* Hover effect for dropdown header */
 .dropdown-header:hover {
-    background-color: #e6e6d3; /* Slightly lighter beige on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: rgba(193, 185, 175, 0.2); /* Subtle highlight */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
-/* Arrow styling */
-.dropdown-header .arrow {
-    font-size: 1.2rem; /* Larger arrow */
-    color: #636b2f; /* Match text color */
-    margin-left: 0.5rem;
-}
-
-/* Dropdown content styling */
+/* Content inside dropdown */
 .dropdown-content {
     display: none; /* Hidden by default */
-    background-color: white;
-    border: 1px solid rgba(193, 185, 175, 0.5); /* Subtle beige border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 1rem;
+    padding: 1rem; /* Internal spacing for content */
     margin-top: 0.5rem; /* Space between header and content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white; /* Content background */
+    border-top: 1px solid rgba(193, 185, 175, 0.3); /* Subtle divider */
 }
 
-/* Dropdown content image styling */
+/* Icon or image inside dropdown content */
 .dropdown-content img {
-    width: 80px; /* Size of the placeholder image */
-    height: 80px;
-    margin-bottom: 1rem;
-    border-radius: 10px; /* Rounded image corners */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto 1rem; /* Center the image and add spacing below */
+    width: 60px; /* Resized for consistency */
+    height: 60px;
+    border-radius: 10px; /* Rounded corners for images */
 }
 
-/* Dropdown content text styling */
+/* Text inside dropdown content */
 .dropdown-content p {
-    font-family: 'Lorin', Arial, sans-serif;
-    font-weight: 300; /* Light weight for content text */
-    color: #636b2f; /* Dark olive text */
-    font-size: 0.95em;
-    line-height: 1.6; /* Comfortable line spacing */
+    font-family: 'Lorin', Arial, sans-serif; /* Content font */
+    font-weight: 300; /* Light font weight for contrast */
+    font-size: 1em; /* Standard size */
+    color: #636b2f; /* Text color */
+    line-height: 1.6; /* Line spacing for readability */
 }
-
