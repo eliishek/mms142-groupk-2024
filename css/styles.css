@@ -135,6 +135,7 @@ footer {
 }
 
 .card:hover {
+    background-color: #6b8e23; /* olive background */
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
