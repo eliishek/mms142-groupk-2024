@@ -117,8 +117,8 @@ section {
 }
 
 .hero-image img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 97%;
+    max-height: 97%;
     object-fit: contain; 
 }
 
