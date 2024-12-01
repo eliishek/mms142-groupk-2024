@@ -8,6 +8,14 @@
     <script>
         // Script for toggling dropdown visibility
         function toggleDropdown(element) {
+            const allDropdowns = document.querySelectorAll('.dropdown-content');
+            allDropdowns.forEach((dropdown) => {
+                if (dropdown !== element.nextElementSibling) {
+                    dropdown.style.display = "none"; // Close other dropdowns
+                    dropdown.previousElementSibling.querySelector(".arrow").textContent = "⮟";
+                }
+            });
+
             const content = element.nextElementSibling;
             const isVisible = content.style.display === "block";
             content.style.display = isVisible ? "none" : "block";
@@ -38,13 +46,11 @@
         </p>
         <h3>Key Findings from PIDS Study</h3>
         <div class="cards-container">
-            <!-- Card 1 -->
             <div class="card">
                 <img src="img/placeholder.png" alt="Icon for Digital Adoption">
                 <h3>Digital Adoption</h3>
                 <p>Digital technologies are increasingly adopted by agricultural establishments.</p>
             </div>
-            <!-- Card 2 -->
             <div class="card">
                 <img src="img/placeholder.png" alt="Icon for Accessibility Gaps">
                 <h3>Accessibility Gaps</h3>
@@ -57,7 +63,6 @@
     <section>
         <h3>Study Recommendations</h3>
         <div class="dropdown-container">
-            <!-- Unified Data Systems -->
             <div class="dropdown">
                 <div class="dropdown-header" onclick="toggleDropdown(this)">
                     <span>Unified Data Systems</span>
@@ -67,11 +72,18 @@
                     <p>Develop centralized platforms for government decision-making and advisory services.</p>
                 </div>
             </div>
-            <!-- Other recommendations... -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>Centralized Portals</span>
+                    <span class="arrow">⮟</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>Consolidate all government digital agriculture resources into one easily accessible portal.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Disruptive Technologies Header -->
     <header>
         <h1>Disruptive Technologies in Philippine Agriculture</h1>
     </header>
@@ -99,9 +111,8 @@
     <!-- AgriTech Startups Section -->
     <section>
         <h2>AgriTech Startups Transforming Agriculture</h2>
-        <div class="cards-container">
-            <!-- Kita -->
-            <div class="card">
+        <div class="cards-container dropdown">
+            <div class="card dropdown">
                 <div class="dropdown-header" onclick="toggleDropdown(this)">
                     <h3>Kita: Improving Supply Chains</h3>
                     <span class="arrow">⮟</span>
@@ -115,8 +126,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- Mayani -->
-            <div class="card">
+            <div class="card dropdown">
                 <div class="dropdown-header" onclick="toggleDropdown(this)">
                     <h3>Mayani: Connecting Farmers</h3>
                     <span class="arrow">⮟</span>
