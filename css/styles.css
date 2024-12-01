@@ -259,7 +259,7 @@ section {
 
 .team-card {
     position: relative;
-    background-color: #4a5a28; /* Dark olive green */
+    background-color: #636b2f; /* Dark olive green */
     border-radius: 20px;
     text-align: center;
     padding: 2rem 1rem;
@@ -269,7 +269,7 @@ section {
 }
 
 .team-card:hover {
-    background-color: #6b8e23;
+    background-color: #65750e;
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
