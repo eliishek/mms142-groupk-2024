@@ -45,6 +45,12 @@ h3 {
     font-size: 1.5em;
 }
 
+/Justify/
+p {
+    text-align: justify;  /* Justifies the text */
+    line-height: 1.6;      /* Optional for readability */
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
@@ -359,8 +365,6 @@ section {
 }
 
 
-
-
 /* Footer */
 footer {
     background-color: #636b2f;
@@ -373,3 +377,5 @@ footer {
     font-family: 'Caviar Dreams', Arial, sans-serif;
     font-size: 0.9em;
 }
+
+
