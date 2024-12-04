@@ -1,3 +1,4 @@
+
 /* Font Faces */
 @font-face {
     font-family: 'True Sage';
@@ -22,11 +23,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-p {
-    text-align: justify; /* Justifies the text */
-    line-height: 1.6;    /* Optional: Adjusts line spacing for better readability */
 }
 
 h1 {
@@ -369,6 +365,7 @@ section {
     font-weight: 300;
 }
 
+
 /* Footer */
 footer {
     background-color: #636b2f;
@@ -380,32 +377,4 @@ footer {
     width: 90%;
     font-family: 'Caviar Dreams', Arial, sans-serif;
     font-size: 0.9em;
-}
-
-.banner {
-    width: 100%;
-    min-height: 300px; /* Adjust based on content */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/RCP image.png');
-    background-size: cover;
-    background-position: center center; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; 
-    text-align: center;
-    padding: 2rem;
-}
-
-.content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    text-align: center;
-    color: #fff;
-}
-
-.content h1 {
-    font-size: 70px;
-    margin-top: 80px;
 }
