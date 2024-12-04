@@ -412,6 +412,20 @@ footer {
     bottom: 0; /* Bottom overlay */
 }
 
+.banner:hover {
+    cursor: pointer;
+}
+
+.banner:hover::before, 
+.banner:hover::after {
+    background: rgba(0, 0, 0, 0.7); /* Darken overlays further on hover */
+}
+
+.banner:hover {
+    box-shadow: 0 0 20px 10px rgba(128, 128, 0, 0.7); /* Light olive glow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
 .content {
     position: relative;
     text-align: center; 
