@@ -389,9 +389,13 @@ footer {
 }
 
 .content {
-    text-align: center; /* Align text to the center */
-    color: white;
-    max-width: 80%; /* Ensure the content does not stretch excessively */
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Add semicolon here */
+    text-align: center;
+    color: #fff;
+}
 }
 
 .content h1 {
