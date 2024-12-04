@@ -387,9 +387,8 @@ footer {
 
 .content {
     width: 100%;
-    position: center;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     text-align: center;
-    color: white; /* Added color as it was cut off */
+    color: white; 
 }
