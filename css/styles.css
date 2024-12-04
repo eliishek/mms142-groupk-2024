@@ -378,7 +378,7 @@ footer {
 
 .banner {
     width: 100%;
-    min-height: 50vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('RCP image.png');
     background-size: cover;
     background-position: center;
