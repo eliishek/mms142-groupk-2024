@@ -378,29 +378,34 @@ footer {
     font-size: 0.9em;
 }
 
+/* Banner Section */
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('RCP image.png');    
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/RCP image.png'); 
+    background-size: cover; 
     background-position: center;
+    background-repeat: no-repeat; 
     position: relative; 
     display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
+
 .content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    text-align: center;
-    color: #fff;
+    position: relative;
+    text-align: center; 
+    color: #fff; 
+    z-index: 1; 
 }
 
 .content h1 {
-    font-size: 70px;
-    margin-top: 80px;
+    font-size: 70px; 
+    font-weight: bold; 
+    line-height: 1.2; 
+    margin: 0; 
+    padding: 0 20px; 
 }
+
 
