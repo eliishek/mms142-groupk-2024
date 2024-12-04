@@ -383,6 +383,9 @@ footer {
     background-size: cover;
     background-position: center;
     position: relative; /* Added to properly position `.content` inside the banner */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .content {
@@ -392,11 +395,6 @@ footer {
     transform: translateY(-50%); /* Add semicolon here */
     text-align: center;
     color: #fff;
-}
-
-.content h1 {
-    font-size: 70px;
-    margin-top: 80px;
 }
 
 
