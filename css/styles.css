@@ -389,9 +389,9 @@ footer {
     background-size: cover;
     background-position: center;
     position: relative; 
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .content {
