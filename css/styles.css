@@ -24,6 +24,11 @@ body {
     line-height: 1.6;
 }
 
+p {
+    text-align: justify; /* Justifies the text */
+    line-height: 1.6;    /* Optional: Adjusts line spacing for better readability */
+}
+
 h1 {
     text-align: center;
     font-family: 'True Sage', serif;
