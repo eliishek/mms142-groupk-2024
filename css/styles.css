@@ -385,7 +385,7 @@ footer {
     position: relative; /* Added to properly position `.content` inside the banner */
 }
 
-content {
+.content {
     width: 100%;
     text-align: center;
     color: white;
