@@ -392,6 +392,25 @@ footer {
     align-items: center;
 }
 
+.banner::before,
+.banner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20%; /* Adjust overlay height */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    pointer-events: none; /* Ensures overlays don’t interfere with interactions */
+    z-index: 1;
+}
+
+.banner::before {
+    top: 0; /* Top overlay */
+}
+
+.banner::after {
+    bottom: 0; /* Bottom overlay */
+}
 
 .content {
     position: relative;
