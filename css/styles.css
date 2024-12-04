@@ -50,6 +50,12 @@ h3 {
     font-size: 1.5em;
 }
 
+/Justify/
+p {
+    text-align: justify;  /* Justifies the text */
+    line-height: 1.6;      /* Optional for readability */
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
@@ -401,4 +407,3 @@ footer {
     font-size: 70px;
     margin-top: 80px;
 }
-
