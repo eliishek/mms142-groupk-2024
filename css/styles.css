@@ -392,26 +392,24 @@ footer {
     background-size: cover;
     background-position: center;
     position: relative; 
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white; 
+    text-align: center; /* Align text to the center */
+    color: white;
+    max-width: 80%; /* Ensure the content does not stretch excessively */
 }
 
 .content h1 {
     font-size: 55px;
-    margin-top: 80px;
-    text-align: center;
+    margin: 20px 0; /* Adjust vertical spacing */
 }
 
 .content p {
-    margin-top: 80px;
-    text-align: center;
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 1.6; /* Set proper line spacing */
+    margin: 20px 0; /* Consistent margin for the paragraph */
 }
-
-
