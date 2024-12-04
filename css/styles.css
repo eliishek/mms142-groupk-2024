@@ -385,13 +385,15 @@ footer {
 .banner {
     width: 100%;
     min-height: 300px; /* Adjust based on content */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('RCP image.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/RCP image.png');
     background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    background-position: center center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+    padding: 2rem;
 }
 
 .content {
