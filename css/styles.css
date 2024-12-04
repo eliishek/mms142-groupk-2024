@@ -398,9 +398,9 @@ footer {
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     text-align: center;
-    color: #fff;
+    color: white; 
 }
 
 .content h1 {
