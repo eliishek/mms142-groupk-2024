@@ -27,6 +27,7 @@ body {
 h1 {
     text-align: center;
     font-family: 'True Sage', serif;
+    color: #636b2f; /* Dark olive text */
     font-size: 2.5em;
     margin-top: 1.5rem;
 }
