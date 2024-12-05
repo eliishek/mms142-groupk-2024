@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conclusion & Recommendations - AgriTech</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function toggleDropdown(element) {
+        const content = element.nextElementSibling;
+        const isVisible = content.style.display === "block";
+        content.style.display = isVisible ? "none" : "block";
+        const arrow = element.querySelector(".arrow");
+        if (arrow) {
+            arrow.textContent = isVisible ? "⮟" : "⮝";
+        }
+    }
+    </script>
 </head>
 <body>
     <nav>
