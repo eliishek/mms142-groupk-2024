@@ -27,6 +27,7 @@ body {
 h1 {
     text-align: center;
     font-family: 'True Sage', serif;
+    color: #636b2f; /* Dark olive text */
     font-size: 2.5em;
     margin-top: 1.5rem;
 }
@@ -381,7 +382,7 @@ footer {
 /* Banner Container */
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url('../images/banner-introduction.jpg'); 
     background-size: cover;
     background-position: center;
@@ -390,8 +391,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    filter: brightness(0.7); 
+    overflow: hidden; 
 }
 
 .content {
