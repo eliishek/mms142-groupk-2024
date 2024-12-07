@@ -48,8 +48,8 @@ h3 {
 
 /Justify/
 p {
-    text-align: justify;  /* Justifies the text */
-    line-height: 1.6;      /* Optional for readability */
+    text-align: justify; 
+    line-height: 1.6;     
 }
 
 /* Navigation Bar */
